@@ -16,6 +16,9 @@ async function findPopulatedComments() {
   const posts = await PostMod.find()
   await PostMod.populate(posts, { path: 'comments', model: 'Comment' })
   await PostMod.populate(posts, { path: 'comments.author', model: 'User' })
+
+  console.log(posts[0].comments[0])
+
   assert(Array.isArray(posts[0].comments[0].author) === false)
 }
 
