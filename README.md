@@ -16,4 +16,5 @@ AssertionError [ERR_ASSERTION]: false == true
 it means `posts[0].comments[0].author` is an array but an object is expected !
 
 Version 5.2.10 is ok
+
 Version 5.2.11, 5.2.12, 5.2.13 failed
